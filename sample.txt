@@ -1,0 +1,5 @@
+Sometimes, while working with records, we might have a common problem of adding contents of one tuple with the corresponding index of other tuple.
+This has application in almost all the domains in which we work with tuple records.
+Let’s discuss certain ways.
+which this task can be performed.
+Thank you.
