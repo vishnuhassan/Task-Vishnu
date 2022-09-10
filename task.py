@@ -15,6 +15,21 @@ if (result):
 else:
     print("No' it's not palindrome")
 print("**************************************************************************")
+print("----------------------generator method to find palindrome--------------")
+s = "malayalam"
+str1 = ""
+def Generator(s):
+    for i in s[::-1]:
+        yield i
+               
+for i in Generator(s): 
+    str1 +=i
+    
+if str1 == s:
+    print("yes ,it is Palindrome")
+else:
+    print("No ,it is not Palindrome")
+print("****************************************************************************")
 print("---------------Program 2------------------")
 print("---------------adding two numbers by individual elements----------------")
 
