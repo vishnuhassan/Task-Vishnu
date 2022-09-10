@@ -89,26 +89,25 @@ for i in test_str:
 print(dicx)
 
 print("***************************************************************")
-
 print("--------------------------Program 5----------------------")
 print("--------------------adding respect to integer and respect to string-------------------")
 t1 = (1, 2, 3, "a", "c")
 t2 = ("b", "d", 9, 8, 7)
 Output = []
-x = []
-y = []
+list1 = []
+list2 = []
 r = []
 for i in list(t2):
     if type(i) == int:
-        x.append(i)
+        list1.append(i)
     else:
-        y.append(i)
+        list2.append(i)
 
-z = x + y
+add = list1 + list2
 
 for i in range(len(t1)):
-    k = list(t1)
-    m = k[i] + z[i]
+    v = list(t1)
+    m = v[i] + add[i]
     r.append(m)
 output = tuple(r)
 print(output)
