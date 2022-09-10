@@ -142,3 +142,46 @@ def flatten(list):
 lis = [1, 2, [3, 4, [5, 6]], 7, 8, [9, [10]]]
 print(list(flatten(lis)))
 print("*******************************************************")
+
+print("--------------------------Program 8--------------------------")
+"""
+Load sample content in text file.
+   Read data and find
+    1. No of lines in file
+	2. No of words in each line
+	3. No of chars in each line
+	4. No of vowels and consonants
+	5. No of special chars linewise and total
+"""
+
+file = open('sample.txt', 'r')
+# no of lines in file
+content = file.readlines()
+no_lines = len(content)
+
+print("No.of.lines: ", no_lines)
+
+# no of char in each line
+count = 0
+for i in content:
+    for j in i:
+        if j != " ":
+            count += 1
+    print("In this line characters are {} ".format(count))
+    count = 0
+
+# no.of.vowels and consonants
+vowel_count = 0
+total_char = 0
+vowels = {'a', 'e', 'i', 'o', 'u'}
+for i in content:
+    for j in i:
+        total_char += 1
+        if j in vowels:
+            vowel_count += 1
+print("The total no of vowels are {}".format(vowel_count))
+consonants = total_char - vowel_count
+print("The total consonants are {}".format(consonants))
+
+
+print("***************************************************************************")
